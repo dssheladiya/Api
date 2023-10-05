@@ -14,6 +14,7 @@ class _POSTApiDemoState extends State<POSTApiDemo> {
   var Data;
   var body = {"title": "denish"};
   bool loading = false;
+
   Future getData(title) async {
     setState(() {});
     loading = true;

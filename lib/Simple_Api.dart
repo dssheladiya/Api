@@ -11,16 +11,6 @@ class simpledemo extends StatefulWidget {
 }
 
 class _simpledemoState extends State<simpledemo> {
-  // Future getdata() async {
-  //   http.Response response =
-  //       await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos'));
-  //   if (response.statusCode == 200) {
-  //     data = jsonDecode(response.body);
-  //     return data;
-  //   } else {
-  //     print("${response.statusCode}");
-  //   }
-  // }
   Future getdata() async {
     http.Response response =
         await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos'));

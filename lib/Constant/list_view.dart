@@ -10,7 +10,7 @@ Expanded products() {
         return Container(
           height: 100,
           margin: EdgeInsets.all(10),
-          color: kred,
+          color: kRed,
         );
       },
     ),

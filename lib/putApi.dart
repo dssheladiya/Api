@@ -3,14 +3,14 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class PUTApidemo extends StatefulWidget {
-  const PUTApidemo({Key? key}) : super(key: key);
+class PutApiDemo extends StatefulWidget {
+  const PutApiDemo({Key? key}) : super(key: key);
 
   @override
-  State<PUTApidemo> createState() => _PUTApidemoState();
+  State<PutApiDemo> createState() => _PutApiDemoState();
 }
 
-class _PUTApidemoState extends State<PUTApidemo> {
+class _PutApiDemoState extends State<PutApiDemo> {
   bool loading = false;
   var body = {"title": "soni", "price": "250", "stock": "200"};
 

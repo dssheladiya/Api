@@ -11,6 +11,8 @@ class parameterdemo extends StatefulWidget {
 }
 
 class _parameterdemoState extends State<parameterdemo> {
+  var data;
+
   Future getdata() async {
     http.Response response =
         await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos'));
@@ -28,7 +30,6 @@ class _parameterdemoState extends State<parameterdemo> {
     super.initState();
   }
 
-  var data;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -107,11 +108,6 @@ class _PARAMETERdemoState extends State<PARAMETERdemo> {
   void initState() {
     getdata();
     super.initState();
-  }
-
-  Future future() async {
-    await Future.delayed(const Duration(seconds: 8));
-    return 20;
   }
 
   @override

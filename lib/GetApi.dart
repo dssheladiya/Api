@@ -28,6 +28,16 @@ class _apiDemoState extends State<apiDemo> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: FutureBuilder(
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return const Column(children: []);
+          } else {
+            return const CircularProgressIndicator();
+          }
+        }, future: null,
+      ),
+    );
   }
 }

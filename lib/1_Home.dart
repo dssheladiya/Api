@@ -6,14 +6,14 @@ import '2_Home.dart';
 import '3_Home.dart';
 import '4_Home.dart';
 
-class HOME_1 extends StatefulWidget {
-  const HOME_1({Key? key}) : super(key: key);
+class Home_1 extends StatefulWidget {
+  const Home_1({Key? key}) : super(key: key);
 
   @override
-  State<HOME_1> createState() => _HOME_1State();
+  State<Home_1> createState() => _Home_1State();
 }
 
-class _HOME_1State extends State<HOME_1> {
+class _Home_1State extends State<Home_1> {
   var Data;
   bool loading = false;
   bool isSearching = false;
@@ -76,8 +76,8 @@ class _HOME_1State extends State<HOME_1> {
                       hintText: "Search Product..",
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                          borderSide:
-                              BorderSide(color: Colors.blueGrey, width: 1.5)),
+                          borderSide: const BorderSide(
+                              color: Colors.blueGrey, width: 1.5)),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                           borderSide:
@@ -99,7 +99,7 @@ class _HOME_1State extends State<HOME_1> {
                                 scrollDirection: Axis.vertical,
                                 physics: BouncingScrollPhysics(),
                                 gridDelegate:
-                                    SliverGridDelegateWithFixedCrossAxisCount(
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                   childAspectRatio: 2 / 3.5,
                                   // crossAxisSpacing: 10,

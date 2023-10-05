@@ -63,9 +63,7 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text(
-                    "${time[index]}",
-                  ),
+                  child: Text("${time[index]}"),
                 );
               },
             ),
