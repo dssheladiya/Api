@@ -16,10 +16,10 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               children: [
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 Container(
                   height: 60,
                   width: 300,
@@ -28,7 +28,7 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
                       border: Border.all(color: Colors.black54)),
                   child: TextField(
                     controller: controller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Name",
                         enabledBorder:
                             OutlineInputBorder(borderSide: BorderSide.none),
@@ -36,7 +36,7 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
                             OutlineInputBorder(borderSide: BorderSide.none)),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 GestureDetector(
                   onTap: () {
                     setState(() {
@@ -50,20 +50,20 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(color: Colors.black54)),
-                    child: Icon(Icons.arrow_forward),
+                    child: const Icon(Icons.arrow_forward),
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ListView.builder(
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: time.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.only(left: 20),
-                  child: Text("${time[index]}"),
+                  child: Text(time[index]),
                 );
               },
             ),
@@ -72,10 +72,11 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
                   setState(() {});
                   time.clear();
                 },
-                child: Text("Clear Data")),
+                child: const Text("Clear Data")),
           ],
         ),
       ),
     );
   }
 }
+//

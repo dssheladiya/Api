@@ -62,8 +62,7 @@ class _GetApiTwoState extends State<GetApiTwo> {
                           ]),
                           const SizedBox(height: 8),
                           Row(children: [
-                            const Text("Name :",
-                                style: TextStyle(fontSize: 18)),
+                            const Text("Name:", style: TextStyle(fontSize: 18)),
                             Text(' ${obj['name'] ?? "--"}',
                                 style: buildTextStyle()),
                           ]),

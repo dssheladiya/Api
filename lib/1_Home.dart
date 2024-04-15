@@ -131,7 +131,7 @@ class _Home_1State extends State<Home_1> {
                                           child: Image.network(
                                             Data["products"][index]
                                                 ["thumbnail"],
-                                            fit: BoxFit.cover,
+                                            fit: BoxFit.cover
                                           ),
                                         ),
                                       ),

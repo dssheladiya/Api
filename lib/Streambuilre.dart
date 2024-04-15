@@ -30,11 +30,11 @@ class _streambuilredemoState extends State<streambuilredemo> {
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   Data = Data + snapshot.data!;
-                  return Text("${Data}");
+                  return Text("$Data");
                 } else if (snapshot.hasError) {
-                  return Text("invalid");
+                  return const Text("invalid");
                 } else {
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 }
               },
             ),
