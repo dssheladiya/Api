@@ -67,7 +67,7 @@ class _HOME_3State extends State<HOME_3> {
                         child: Container(
                           height: 220,
                           width: 200,
-                          color: Colors.red,
+                          color: Colors.white,
                           child: Image.network(
                               snapshot.data!.products[index].thumbnail,
                               fit: BoxFit.cover),

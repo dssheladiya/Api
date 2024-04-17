@@ -15,7 +15,9 @@ class HOME_2 extends StatefulWidget {
 }
 
 class _HOME_2State extends State<HOME_2> {
+
   var data;
+
   Future<List> getdata() async {
     http.Response response = await http.get(
       Uri.parse("https://dummyjson.com/products/categories"),
@@ -71,7 +73,7 @@ class _HOME_2State extends State<HOME_2> {
                             color: Colors.teal.shade300,
                             borderRadius: BorderRadius.circular(10),
                             border:
-                                Border.all(color: Colors.blueGrey, width: 1),
+                            Border.all(color: Colors.blueGrey, width: 1),
                           ),
                           child: Center(
                             child: Text(
@@ -105,12 +107,14 @@ class _HOME_2State extends State<HOME_2> {
 class Home2 extends StatefulWidget {
   const Home2({Key? key, this.send}) : super(key: key);
   final send;
+
   @override
   State<Home2> createState() => _Home2State();
 }
 
 class _Home2State extends State<Home2> {
   var Data1;
+
   Future<Map> getdata1() async {
     http.Response response1 = await http.get(
         Uri.parse("https://dummyjson.com/products/category/${widget.send}"));
@@ -152,16 +156,18 @@ class _Home2State extends State<Home2> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Ui(
-                                  code: snapshot.data!["products"][index]["id"],
-                                ),
+                                builder: (context) =>
+                                    Ui(
+                                      code: snapshot
+                                          .data!["products"][index]["id"],
+                                    ),
                               ));
                         });
                       },
                       child: Container(
                         height: 220,
                         width: 200,
-                        color: Colors.red,
+                        color: Colors.white,
                         child: Image.network(
                             snapshot.data!["products"][index]["thumbnail"],
                             fit: BoxFit.cover),
